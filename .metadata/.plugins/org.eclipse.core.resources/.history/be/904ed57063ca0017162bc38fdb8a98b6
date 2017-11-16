@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Driver {
+	public static void main(String[] args) throws Exception
+	
+	    {
+	
+	        int[] numbers, counters;
+
+	        Histogram hist = new Histogram();
+	
+	         
+	
+	        numbers = hist.readIntArrayFromFile("data-8.3.txt");
+	
+	        counters = hist.initializeCounterArray(numbers);
+	
+	         
+	
+	        hist.displayIntArray(counters);
+	
+	    }
+}
